@@ -1,0 +1,20 @@
+{  
+	"easySolution":[
+    	"walk","kick","walk", "walk", "combopunch", "walk", "left", "walk", "combopunch"
+    ],
+    "cutscene": {
+        "show": true,
+        "path": "cutscene-yokai-pelea",
+        "screens": 3,
+        "texts": [
+            {"screen":2, "text":42},
+            {"screen":3, "text":43}
+        ],
+        "audios": [
+            {"screen":1, "audioPath":"music/cutscenes/cs_transition02"},
+            {"screen":2, "audioPath":"music/cutscenes/cs_transition02"},
+            {"screen":3, "audioPath":"music/cutscenes/cs_transition02"}
+        ]
+    },
+    "maxFreeInstructions": 1
+}

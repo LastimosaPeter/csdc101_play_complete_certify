@@ -1,0 +1,10 @@
+{
+    "easySolution":[
+    	"walk","walk","walk","walk","right","walk","walk","walk"
+    ],
+    "cutscene": {
+        "show": false
+        },
+    "showEndScreen": false,
+    "maxFreeInstructions": 9
+}

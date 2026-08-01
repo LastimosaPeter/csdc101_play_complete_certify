@@ -1,0 +1,11 @@
+{  
+	"easySolution":[
+    	"combo", "punch", "kick", "walk", "left", "combofly", "kick", "left", "walk", "right", "combo"
+    ],
+    "cutscene": {
+        "show": false,
+        "path": "yokai-puerta",
+        "screens": 2
+        },
+    "maxFreeInstructions": 1
+}

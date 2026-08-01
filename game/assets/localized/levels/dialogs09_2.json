@@ -1,0 +1,9 @@
+{
+    "introDialogs":[
+    	{"text":21,  "animate":true, "showCommands":false}
+    ],
+    "maxFreeInstructions": 1,
+    "easySolution":[
+    	"combo", "left", "combo"
+    ]
+}

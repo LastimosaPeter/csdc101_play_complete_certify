@@ -1,0 +1,6 @@
+{  
+	"easySolution":[
+    	"sub3", "walk", "sub3","right","sub3", "combofly"
+    ],
+    "maxFreeInstructions": 1
+}

@@ -1,0 +1,12 @@
+{  
+	"introDialogs":[
+        {"text":27,  "animate":true, "showCommands":false}
+    ],
+	"easySolution":[
+    	"combo", "kick", "punch", "right", "combo", "walk", "punch", "kick", "left", "combo", "walk"
+    ],
+    "cutscene": {
+        "show": false
+        },
+    "maxFreeInstructions": 1
+}

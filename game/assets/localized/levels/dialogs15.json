@@ -1,0 +1,12 @@
+{  
+	"introDialogs":[
+        {"text":31,  "animate":true, "showCommands":false}
+    ],
+    "outroDialogs":[
+    	{"text":32,  "animate":true, "showCommands":false}
+    ],
+	"easySolution":[
+    	"walk", "walk", "walk", "left", "walk", "open"
+    ],
+    "maxFreeInstructions": 1
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Code completion icon">
+  <rect width="64" height="64" rx="14" fill="#111d2a"/>
+  <path d="M23 17 11 32l12 15" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m41 17 12 15-12 15" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="43" cy="43" r="13" fill="#c9283e" stroke="#111d2a" stroke-width="3"/>
+  <path d="m36.5 43 4.2 4.2 8.2-9.2" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

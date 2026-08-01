@@ -1,0 +1,12 @@
+{  
+	"introDialogs":[
+        {"text":26,  "animate":true, "showCommands":false}
+    ],
+	"easySolution":[
+    	"walk", "walk", "walk", "right", "fly", "fly", "fly", "fly", "fly", "left", "walk", "walk", "walk", "walk"
+    ],
+    "cutscene": {
+        "show": false
+        },
+    "maxFreeInstructions": 1
+}

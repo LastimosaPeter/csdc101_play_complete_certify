@@ -1,0 +1,13 @@
+{
+    "introDialogs":[
+        {"text":11,  "animate":true, "showCommands":false}
+    ],
+    "easySolution":[
+    	"walk","walk","walk"
+    ],
+    "cutscene": {
+        "show": false
+        },
+    "showEndScreen": false,
+    "maxFreeInstructions": 9
+}

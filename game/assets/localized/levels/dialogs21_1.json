@@ -1,0 +1,9 @@
+{  
+    "outroDialogs":[
+        {"text":45,  "animate":true, "showCommands":false}
+    ],
+	"easySolution":[
+    	"walk","combopunch", "left" ,"walk", "combopunch", "walk", "left", "walk", "combopunch"
+    ],
+    "maxFreeInstructions": 1
+}

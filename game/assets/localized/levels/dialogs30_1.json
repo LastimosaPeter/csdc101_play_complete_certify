@@ -1,0 +1,9 @@
+{  
+	"introDialogs":[
+        {"text":78,  "animate":true, "showCommands":false}
+    ],
+	"easySolution":[
+    	"walk","left", "combofly", "fly", "left", "combofly", "fly", "fly", "right", "walk", "walk"
+    ],
+    "maxFreeInstructions": 1
+}

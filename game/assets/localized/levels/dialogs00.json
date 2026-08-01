@@ -1,0 +1,38 @@
+{
+    "introDialogs":[
+        {"text": 1,  "showCommands":false, "animate":true}, 
+        {"text": 2,  "showCommands":false, "animate":false}
+    ],
+    "outroDialogs":[
+    	{"text":3, "showCommands":false, "animate":true},
+        {"text":4, "showCommands":false, "animate":true}
+    ],
+    "cutscene": {
+        "show": true,
+        "path": "cutscene-intro",
+        "screens": 13,
+        "texts": [
+            {"screen":4, "text":5},
+            {"screen":5, "text":6},
+            {"screen":6, "text":6},
+            {"screen":7, "text":6},
+            {"screen":8, "text":0},
+            {"screen":9, "text":138},
+            {"screen":10, "text":139},
+            {"screen":11, "text":140},
+            {"screen":12, "text":8}
+        ],
+        "audios": [
+            {"screen":2, "audioPath":"music/cutscenes/cs_transition01"},
+            {"screen":3, "audioPath":"music/cutscenes/cs_transition01"},
+            {"screen":4, "audioPath":"music/cutscenes/cs_transition02"},
+            {"screen":5, "audioPath":"music/cutscenes/cs_transition01"},
+            {"screen":6, "audioPath":"music/cutscenes/cs_transition01"},
+            {"screen":7, "audioPath":"music/cutscenes/cs_transition02"},
+            {"screen":9, "audioPath":"music/cutscenes/cs_transition01"},
+            {"screen":13, "audioPath":"music/cutscenes/cs_transition02"}
+        ]
+    },
+    "showEndScreen": false,
+    "maxFreeInstructions": 9
+}

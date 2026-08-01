@@ -1,0 +1,24 @@
+{  
+	"introDialogs":[
+        {"text":22,  "animate":true, "showCommands":false}
+    ],
+    "outroDialogs":[
+        {"text":23,  "animate":true, "showCommands":false}
+    ],
+    "showEndScreen": true,
+    "cutscene": {
+        "show": true,
+        "path": "cutscene-yokai-radar",
+        "screens": 2,
+        "texts": [
+            {"screen":2, "text":24}
+        ],
+        "audios": [
+            {"screen":2, "audioPath":"music/cutscenes/cs_radar"}
+        ]
+    },
+	"easySolution":[
+    	"combofly","combofly"
+    ],
+    "maxFreeInstructions": 1
+}

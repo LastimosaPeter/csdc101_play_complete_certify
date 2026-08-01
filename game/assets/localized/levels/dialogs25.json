@@ -1,0 +1,6 @@
+{  
+	"easySolution":[
+    	"combofly", "punch", "kick", "walk", "left", "combofly", "fly", "walk", "open"
+    ],
+    "maxFreeInstructions": 1
+}

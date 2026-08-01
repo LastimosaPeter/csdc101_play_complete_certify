@@ -1,0 +1,19 @@
+{  
+	"easySolution":[
+    	"sub3","walk", "sub3", "walk", "left", "walk", "sub3", "walk", "sub3", "kick", "combopunch"
+    ],
+    "cutscene": {
+        "show": true,
+        "path": "cutscene-akuma-escape",
+        "screens": 5,
+        "texts": [
+            {"screen":2, "text":76},
+            {"screen":3, "text":77}
+        ],
+        "audios": [
+            {"screen":2, "audioPath":"music/cutscenes/cs_transition01"},
+            {"screen":4, "audioPath":"music/cutscenes/cs_transition02"}
+        ]
+    },
+    "maxFreeInstructions": 1
+}

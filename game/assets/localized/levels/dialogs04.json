@@ -1,0 +1,17 @@
+{
+	"easySolution":[
+    	"walk","walk","right","walk","walk","left","walk","walk","walk","walk"
+    ],
+    "showEndScreen": true,
+    "cutscene": {
+        "show": true,
+        "path": "cutscene-outro",
+        "screens": 1,
+        "texts": [
+        ],
+        "audios": [
+        {"screen":1, "audioPath":"music/cutscenes/cs_transition01"}
+        ]
+    },
+    "maxFreeInstructions": 4
+}

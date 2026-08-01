@@ -1,0 +1,18 @@
+{  
+	"easySolution":[
+    	"walk","left", "walk", "walk" ,"right", "combofly", "open"
+    ],
+    "showEndScreen": true,
+    "cutscene": {
+        "show": true,
+        "path": "cutscene-akuma-final",
+        "screens": 1,
+        "texts": [
+            {"screen":1, "text":79}
+        ],
+        "audios": [
+            {"screen":1, "audioPath":"music/cutscenes/cs_wind"}
+        ]
+    },
+    "maxFreeInstructions": 1
+}

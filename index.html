@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Play. Complete. Certify. A CSDC101 Code Baymax challenge with four-location completion tracking and certificate generation.">
+  <meta name="theme-color" content="#111d2a">
+  <title>Play. Complete. Certify. | Code Baymax Challenge</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">CSDC101 · Fundamentals of Programming</p>
+      <h1>Play. Complete. Certify.</h1>
+      <p class="hero__subtitle">Code Baymax Challenge</p>
+      <p class="hero__lede">Use logical instructions to guide Baymax through every location. Complete all four locations to unlock your certificate.</p>
+      <div class="hero__meta">
+        <span>Ateneo de Naga University</span>
+        <span>Instructor: Ian Peter L. Lastimosa</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel intro-panel" aria-labelledby="instructions-title">
+      <div>
+        <p class="section-kicker">Activity mechanics</p>
+        <h2 id="instructions-title">Finish the full mission</h2>
+      </div>
+      <ol class="instructions">
+        <li>Play <strong>Big Hero 6: Code Baymax</strong> in the game window below.</li>
+        <li>Complete every level in <strong>Garage, Lab, Yokai, and Akuma</strong>.</li>
+        <li>Keep this webpage open so your progress remains saved in this browser.</li>
+        <li>After all four locations are complete, enter your details and upload a completion screenshot.</li>
+      </ol>
+      <div class="notice" role="note">
+        Progress is saved only in this browser and on this device. Clearing browser data or changing browsers may reset it.
+      </div>
+    </section>
+
+    <section class="panel progress-panel" aria-labelledby="progress-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Mission progress</p>
+          <h2 id="progress-title">Four locations required</h2>
+        </div>
+        <p id="progressSummary" class="progress-summary" aria-live="polite">0 of 4 locations complete</p>
+      </div>
+
+      <div class="progress-bar" aria-hidden="true">
+        <span id="progressBarFill"></span>
+      </div>
+
+      <div class="location-grid" id="locationGrid">
+        <article class="location-card" data-location="garage">
+          <span class="location-card__number">01</span>
+          <div>
+            <h3>Garage</h3>
+            <p>Levels 1–6</p>
+          </div>
+          <span class="status-pill">In progress</span>
+        </article>
+        <article class="location-card" data-location="lab">
+          <span class="location-card__number">02</span>
+          <div>
+            <h3>Lab</h3>
+            <p>Levels 7–15</p>
+          </div>
+          <span class="status-pill">Locked</span>
+        </article>
+        <article class="location-card" data-location="yokai">
+          <span class="location-card__number">03</span>
+          <div>
+            <h3>Yokai</h3>
+            <p>Levels 16–29</p>
+          </div>
+          <span class="status-pill">Locked</span>
+        </article>
+        <article class="location-card" data-location="akuma">
+          <span class="location-card__number">04</span>
+          <div>
+            <h3>Akuma</h3>
+            <p>Levels 30–39</p>
+          </div>
+          <span class="status-pill">Locked</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel game-panel" aria-labelledby="game-title">
+      <div class="section-heading game-heading">
+        <div>
+          <p class="section-kicker">Game workspace</p>
+          <h2 id="game-title">Big Hero 6: Code Baymax</h2>
+        </div>
+        <div class="game-actions">
+          <button class="button button--secondary" id="restartGame" type="button">Restart game window</button>
+          <button class="button button--secondary" id="fullscreenGame" type="button">Full screen</button>
+        </div>
+      </div>
+
+      <div class="game-shell" id="gameShell">
+        <div class="game-loader" id="gameLoader" role="status">
+          <span class="spinner" aria-hidden="true"></span>
+          <p>Loading Code Baymax…</p>
+        </div>
+        <iframe
+          id="gameFrame"
+          src="game/index.html"
+          title="Big Hero 6: Code Baymax game"
+          allow="autoplay; fullscreen"
+          loading="eager"
+        ></iframe>
+      </div>
+      <p class="game-help">Use a desktop or laptop browser for the best experience. Audio may begin only after your first click inside the game.</p>
+    </section>
+
+    <section class="panel certificate-panel is-locked" id="certificatePanel" aria-labelledby="certificate-title">
+      <div class="lock-banner" id="lockBanner">
+        <span class="lock-icon" aria-hidden="true">◆</span>
+        <div class="lock-banner__copy">
+          <strong>Certificate locked</strong>
+          <p>Complete Garage, Lab, Yokai, and Akuma to continue.</p>
+        </div>
+        <button class="button button--secondary button--compact lock-banner__action" id="exitAdminMode" type="button" hidden>Exit admin mode</button>
+      </div>
+
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Completion record</p>
+          <h2 id="certificate-title">Generate your certificate</h2>
+        </div>
+      </div>
+
+      <form id="certificateForm" novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Complete name</span>
+            <input id="studentName" name="studentName" type="text" autocomplete="name" maxlength="80" required placeholder="e.g., Juan Dela Cruz">
+          </label>
+          <label>
+            <span>Section</span>
+            <input id="studentSection" name="studentSection" type="text" maxlength="40" required placeholder="e.g., CSDC101 N1Am">
+          </label>
+        </div>
+
+        <label class="upload-field" for="proofPhoto">
+          <span class="upload-field__title">Completion screenshot or photo</span>
+          <span class="upload-field__help">Upload a clear image showing that all four locations were completed. JPG, PNG, or WebP; maximum 8 MB.</span>
+          <input id="proofPhoto" name="proofPhoto" type="file" accept="image/jpeg,image/png,image/webp" required>
+          <span class="file-name" id="fileName">No image selected</span>
+        </label>
+
+        <label class="consent-row">
+          <input id="accuracyConsent" type="checkbox" required>
+          <span>I certify that the information and proof I submitted are accurate and belong to me.</span>
+        </label>
+
+        <p class="form-message" id="formMessage" role="alert"></p>
+        <button class="button button--primary" id="generateCertificate" type="submit" disabled>Generate completion files</button>
+      </form>
+
+      <div class="completion-actions" id="completionActions" hidden>
+        <div class="success-message">
+          <strong>Completion files are ready.</strong>
+          <p>Download your certificate and proof sheet, then submit them through the platform specified by your instructor.</p>
+        </div>
+        <div class="download-grid">
+          <button class="button button--primary" id="downloadCertificate" type="button">Download certificate</button>
+          <button class="button button--secondary" id="downloadProof" type="button">Download proof sheet</button>
+          <button class="button button--secondary" id="printCertificate" type="button">Print / save as PDF</button>
+        </div>
+        <p class="certificate-id">Certificate ID: <strong id="certificateId">—</strong></p>
+      </div>
+    </section>
+
+    <details class="panel advanced-panel">
+      <summary>Game troubleshooting and progress controls</summary>
+      <div class="advanced-content">
+        <p>Use the local server launcher when testing the downloaded project. Opening <code>index.html</code> directly may prevent the game from loading its assets.</p>
+        <button class="button button--danger" id="resetProgress" type="button">Reset all Code Baymax progress</button>
+      </div>
+    </details>
+  </main>
+
+  <footer>
+    <p>CSDC101 · Fundamentals of Programming</p>
+    <p>Game assets are third-party material. Confirm that your intended hosting and classroom use are permitted by the applicable rights holder.</p>
+  </footer>
+
+  <button class="admin-launch" id="adminAccess" type="button" aria-haspopup="dialog" aria-controls="adminDialog">
+    <span aria-hidden="true">◆</span>
+    <span>Admin mode</span>
+  </button>
+
+  <dialog class="admin-dialog" id="adminDialog" aria-labelledby="adminDialogTitle">
+    <form class="admin-dialog__form" id="adminForm" novalidate>
+      <button class="admin-dialog__close" id="adminClose" type="button" aria-label="Close admin mode dialog">×</button>
+      <p class="section-kicker">Instructor access</p>
+      <h2 id="adminDialogTitle">Open certificate section</h2>
+      <p class="admin-dialog__description">Enter the six-digit admin code. Successful access unlocks the certificate form for this tab without changing game progress.</p>
+      <label for="adminCode">
+        <span>Admin code</span>
+        <input id="adminCode" name="adminCode" type="password" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="off" required placeholder="••••••">
+      </label>
+      <p class="form-message" id="adminMessage" role="alert"></p>
+      <div class="admin-dialog__actions">
+        <button class="button button--secondary" id="adminCancel" type="button">Cancel</button>
+        <button class="button button--primary" type="submit">Unlock certificate</button>
+      </div>
+    </form>
+  </dialog>
+
+  <canvas id="certificateCanvas" width="1600" height="1131" hidden></canvas>
+  <canvas id="proofCanvas" width="1600" height="1131" hidden></canvas>
+  <script src="app.js"></script>
+</body>
+</html>

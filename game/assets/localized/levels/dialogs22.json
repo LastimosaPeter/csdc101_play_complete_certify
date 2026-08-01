@@ -1,0 +1,20 @@
+{  
+    "introDialogs":[
+        {"text":54,  "animate":true, "showCommands":false}
+    ],
+    "outroDialogs":[
+        {"text":67,  "animate":true, "showCommands":false}
+    ],
+	"easySolution":[
+    	"walk","walk","walk", "walk", "walk", "right", "walk", "walk", "action"
+    ],
+    "showEndScreen": true,
+    "cutscene": {
+        "show": true,
+        "path": "cutscene-akuma-intro",
+        "screens": 1,
+        "texts": [],
+        "audios": []
+    },
+    "maxFreeInstructions": 1
+}

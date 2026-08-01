@@ -1,0 +1,6 @@
+{
+    "maxFreeInstructions": 1,
+    "easySolution":[
+    	"combo", "left", "combo", "action", "walk", "left", "walk", "action"
+    ]
+}
